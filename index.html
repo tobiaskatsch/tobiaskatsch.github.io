@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+</head>
+<body>
+  <div class="content-wrapper">
+    <div class="header-section">
+      <img src="assets/images/profile_2.jpeg" alt="Profile" class="profile-pic">
+      <h1 class="title">Tobias Katsch</h1>
+    </div>
+
+    <div class="intro">
+      <p>
+        I'm Tobias Katsch, Machine learning researcher and author of the 
+        <a href="https://arxiv.org/abs/2311.01927" target="_blank">GateLoop (2023)</a> paper.
+        Under the supervision of 
+        <a href="https://arxiv.org/search/cs?query=Hochreiter%2C+Sepp&searchtype=author&abstracts=show&order=-announced_date_first&size=50" target="_blank">Prof. Sepp Hochreiter</a>
+        at Johannes Kepler University Linz, Austria, I worked on data-controlled linear recurrence for efficient sequence modeling.
+        At <a href="https://www.cartesia.ai" target="_blank">Cartesia</a>, I am building next-generation Speech Models powered by SSMs, working together with
+        <a href="https://arxiv.org/search/cs?query=Gu%2C+Albert&searchtype=author&abstracts=show&order=-announced_date_first&size=50" target="_blank">Albert Gu</a>,
+        <a href="https://ad12.github.io" target="_blank">Arjun Desai</a>,
+        <a href="https://www.linkedin.com/in/bcyang/" target="_blank">Brandon Yang</a>, and
+        <a href="https://krandiash.github.io" target="_blank">Karan Goel</a>.
+      </p>
+    </div>
+
+    <div class="sections">
+      <div class="updates">
+        <!-- <h2>Updates</h2> -->
+        <ul class="updates-list">
+
+          <li>
+            <h3>GateLoop | November 2023</h3>
+            <p>
+              Published <a href="https://arxiv.org/abs/2311.01927" target="_blank">GateLoop: Fully Data-Controlled Linear Recurrence for Sequence Modeling</a>, a foundational sequence model that generalizes linear recurrent
+              models such as S4, S5, LRU, and RetNet by employing data-controlled state transitions.
+              <a href="https://arxiv.org/abs/2311.01927" target="_blank">GateLoop (2023)</a> comes with a gated-linear-attention mode for parallelizable training and linear-recurrent mode for efficient inference and is a predecessor to 
+              <a href="https://arxiv.org/abs/2405.21060" target="_blank">Mamba2 (2024)</a> and 
+              <a href="https://arxiv.org/abs/2405.04517" target="_blank">xLSTM (2024)</a>.
+            </p>
+            <div class="gate-figure-crop">
+              <img
+                src="assets/images/gateloop_formula.jpeg"
+                alt="GateLoop Formula"
+              >
+            </div>
+          </li>
+
+          <li>
+            <h3>GatedLinearRNN JAX Package | February 2024</h3>
+            <p>
+              Released the
+              <a href="https://github.com/tobiaskatsch/GatedLinearRNN" target="_blank">GatedLinearRNN JAX package</a>, a library to facilitate research on linear recurrent sequence models. It contains configurable implementations of various model layers and provides a drop-in replacement for causal multi-head-attention.
+            </p>
+            <div class="centered-figure">
+              <img
+                src="assets/images/gated_linear_rnn.png"
+                alt="GatedLinearRNN figure"
+              >
+            </div>
+          </li>
+
+          <li>
+            <h3>Edge Release | August 2024</h3>
+            <p>
+              At <a href="https://www.cartesia.ai" target="_blank">Cartesia</a>, we developed  
+              <a href="https://github.com/cartesia-ai/edge" target="_blank">Edge</a>, an open-source library to support the research and release of efficient state space models (SSMs) for on-device applications across multiple accelerators and environments.
+              I implemented 
+              <a href="https://github.com/cartesia-ai/edge/tree/main/cartesia-metal" target="_blank">cartesia-metal</a>, a package that contains custom Metal kernels for fast on-device SSM inference on Apple silicon.
+              Our models, available through 
+              <a href="https://github.com/cartesia-ai/edge/tree/main/cartesia-mlx" target="_blank">cartesia-mlx</a>, set the state-of-the-art for throughput and generation quality on edge devices.
+            </p>
+            <div class="centered-figure">
+              <img
+                src="assets/images/mlx.png"
+                alt="MLX figure"
+              >
+            </div>
+          </li>
+
+          <li>
+            <h3>$27M Seed Round at Cartesia | December 2024</h3>
+            <p>
+              Thrilled to announce we've raised $27 million at <a href="https://www.cartesia.ai" target="_blank">Cartesia</a> in our seed round!
+              It's been great to be part of this incredible team, and I'm excited for you
+              to experience the modeling breakthroughs we're making.
+              <a href="https://play.cartesia.ai" target="_blank">Check it out!</a>
+              This is just the beginning—stay tuned!
+            </p>
+            <div class="centered-figure">
+              <img
+                src="assets/images/seed_round.jpg"
+                alt="Seed Round"
+              >
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
